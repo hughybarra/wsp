@@ -1,0 +1,26 @@
+/* Resets */
+h1, h2, h3, h4, h5, h6, p, div, img {
+	margin: 0;
+	padding: 0; 
+}
+
+a {
+	text-decoration: none;
+}
+
+/* main content */ 
+body {
+	margin: 0 auto;
+	width: 960px;
+}
+h1 {
+	font-size: 24px;
+	color: black;
+}
+
+img {
+	width; 200px 
+	float: left;
+	height: 200px;
+}
+
