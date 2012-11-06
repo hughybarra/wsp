@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Don Coqui</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		
+		<header>
+
+			<div id="logo">
+				<a href="index.html" title="Home">
+				<img src="images/logo.png" alt="Doncoqui"/>
+				</a>
+			</div> <!-- Logo --> 
+
+			<nav>
+				<ul>
+					<li><a href="index.html" id="active">home</a></li>
+					<li><a href="menu.html">menu</a></li>
+					<li><a href="reservations.html">reservations</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="contact.html">contact</a></li>
+					<li><a href="directions.html">directions</a></li>
+				</ul>
+			</nav>
+
+		</header> <!-- close header --> 
+
+		<section> 
+
+			<div class="body_image body_image_small">
+				<img src="images/doncoqui_reservations_image.jpg" alt="don coqui at night">
+			</div>
+
+			<div class="main_subject"> <!-- main content --> 
+				<div class="float-left reservations_text" id="border">
+					<p>We're here to welcome you for brunch, dinner and day &amp; evening private events.</p>
+					<p>Walk-ins are always welcome- the majority of our seating is reserved for walk-ins</p>
+
+					<p> If you’d like to be sure to have a 
+					spot then please give us a ring</p>
+					<p>254-473-5746</p>
+				</div>
+
+				<div class="float-left" id="reservations">
+					<h3>Online Reservations</h3>
+
+					<form id="reservation_form">
+
+							<label for="first-name" class="float-left">First Name:</label>
+							<input type="text" id="first-name"/>
+
+							<label for="last-name" class="float-left">Last Name:</label>
+							<input type="text" id="last-name"/>
+
+							<label for="e-mail" class="float-left">E-Mail:</label>
+							<input type="email" id="e-mail" placeholder="user.name@domain.com"/>
+
+							<label for="dates" id="data">Date:</label>
+							<input type="date" id="dates"/>
+
+							<label for="phone-number" id="telephone">Phone:</label>
+							<input type="tel" id="phone-number" placeholder="xxx-xxx-xxx"/>
+
+							<label for="reservation" id="reservation_time">Reservation Time:</label>
+								<select id="reservation">
+								<option value="8am">8:00 am</option>
+								<option value="9am">9:00 am</option>
+								<option value="10am">10:00 am</option>
+								<option value="11am">11:00 am</option>
+								<option value="12pm">12:00 pm</option>
+								<option value="1pm">1:00 pm</option>
+								<option value="2pm">2:00 pm</option>
+								<option value="3pm">3:00 pm</option>
+								<option value="4pm">4:00 pm</option>
+								<option value="5pm">5:00 pm</option>
+								<option value="6pm">6:00 pm</option>
+								<option value="7pm">7:00 pm</option>
+								<option value="8pm">8:00 pm</option> 
+								<option value="9pm">9:00 pm</option>
+								<option value="etc..">etc...</option>
+								</select>
+
+						<label for="requests" class="float-left" id="label_requests">Specific Requests:</label>
+						<textarea cols="20" rows="4" class="float-left" id="requests"></textarea> <!-- should i call out the cols and rows or should I do that in CSS? -->
+
+						<label for="checked_box" class="float-left">Children:</label>
+						<div class="float-left" id="radio"> 
+							yes
+							<input type="radio" value="checked" id="checked_box"/>
+							no
+							<input type="radio"/>
+						</div>
+
+						<input type="submit" value="submit" class="button_3"/>
+
+					</form>
+				</div>
+			</div> <!-- close main subject --> 
+		</section> <!-- close section --> 
+
+		<aside>
+		</aside> <!-- close aside --> 
+
+		<footer>
+			<div class="float-left">
+				<address>
+					Don Coqui 115 Cedar <br>
+					Street New Rochelle, <br>
+					NY 10801
+				</address>
+			</div>
+
+			<div class="float-left small_width">
+				<h4>Reservations</h4>
+				<P> 914-637-3737</p>
+			</div>
+
+			<div class="float-left icons">
+				<a href="http://www.facebook.com" title="like us on Facebook.com"><img src="images/facebook_icon.png" alt="Like us on faceboo"></a>
+			</div>
+
+			<div class="float-left icons">
+				<a href="http://www.twitter.com" title="Tweet about us"><img src="images/twitter_icon.png" alt="tweet about us"></a>
+			</div>
+
+			<div class="float-right big_width">
+				<p>Kitchen: daily 5:00pm-12:00am</p>
+				<p>sat &amp; 10:00am-4:00pm</p>
+			</div>
+
+			<div class="float-right big_width">
+				<p>Bar: sun-wed 5:00pm-12:00am</p>
+				<p>thurs-sat 5:00pm-1:00am</p>
+			</div>
+
+		</footer> <!-- close footer --> 
+
+	</body> 
+</html>
