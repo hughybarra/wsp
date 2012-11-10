@@ -86,13 +86,13 @@
 						<label for="requests" class="float-left" id="label_requests">Specific Requests:</label>
 						<textarea cols="20" rows="4" class="float-left" id="requests"></textarea> <!-- should i call out the cols and rows or should I do that in CSS? -->
 
-						<label for="checked_box" class="float-left">Children:</label>
+						<label for="radio">children</label>
 
 						<div class="float-left" id="radio"> 
 							<label for="radio_one">yes</label>
-							<input type="radio" value="checked" class="checked_box" id="radio_one"/>
+							<input type="radio" name="radio_group" id="radio_one"/>
 							<label for="radio_two">no</label>							
-							<input type="radio" class="checked_box" id="radio_two"/>
+							<input type="radio" name="radio_group" id="radio_two"/>
 						</div>
 
 						<input type="submit" value="submit" class="button_3 float-right"/>

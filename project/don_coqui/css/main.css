@@ -193,14 +193,14 @@ section input {
 	float: left;
 }
 #radio input {
+	width: 80px;
 	float: left;
-	width: 50px;
 	text-align: left;
 }
 #radio label {
+	width: 80px;
 	float: left;
-	text-align: left;
-	width: 50px;
+	padding-top: 5px;
 }
 .button_3 {
 	display: block;
