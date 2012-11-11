@@ -133,8 +133,6 @@ section {
 	margin: 15px 6px;
 }
 
-
-
 #form_home {
 	margin-top: 80px;
 }
@@ -160,6 +158,49 @@ section {
 section h3 {
 	margin: 15px;
 }
+
+
+/* ----- Menu Page ---------- */
+
+#menu h2, #menu h3, #menu h4 {
+	text-align: center;
+}
+
+#menu h3 {
+	line-height: 30px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+#menu h5 {
+	line-height: 20px;
+	font-size: 15px;
+	color: #800d0d;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+#menu h4 {
+	line-height: 20px;
+	margin: 20px 0 20px;
+	font-size: 20px;
+	color: #800d0d;
+	text-decoration: underline;
+}
+
+#menu {
+	width: 800px;
+	text-align: center;
+}
+
+#menu li {
+	margin: 10px 0 10px;
+}
+
+#menu li span {
+	font-style: italic;
+}
+
 /* ----- Reservations Form ----- */ 
 #reservations {
 	width: 450px;
