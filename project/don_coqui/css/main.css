@@ -1,9 +1,12 @@
+
 /* ---------- notes ----------*/
 
 /* 
 	font colors: #800d0d;
 
 	link colors:  #d42a2a;
+
+	hover color: #d54848;
 */
 
 /* ---------- Resets and constants ----------*/
@@ -26,7 +29,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -35,13 +38,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
-
 ul li {
 	color: #800d0d;
 }
@@ -50,13 +49,13 @@ a {
 	color: #d42a2a;
 }
 h2 {
-	font: normal 1.5em/25px "Times New Roman", "Helvetica neue", Arial;
+	font: normal 1.5em/25px "IM+Fell+English", "Helvetica neue", Arial;
 	text-transform: capitalize;
 	margin-bottom: 10px;
 	color: #800d0d;
 }
 p {
-	font: normal 1em/25px "Times New Roman", "Helvetica Neue", Arial;
+	font: normal 1em/25px "IM+Fell+English", "Helvetica Neue", Arial;
 	color: #800d0d;
 }
 address {
@@ -77,60 +76,61 @@ h4 {
 .float-right {
 	float: right;
 }
-
 .icons {
 	margin-left: 10px;
 }
 #border {
 	border-right: 5px solid #800d0d;
 }
-/* ---------- End Resets ---------- */ 
+
+img {
+	width: 100%;
+}
 /* ---------- Main body ------------ */ 
+html {
+	background-color: #fff;
+}
 body {
-	width: 800px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 /* ---------- Header ----------*/
-
 header {
-	width: 800px;
+	width: 100%;
 	margin-top: 10px;
 }
 
 #logo {
 	text-align: center;
+	width: 50%; /* 400 / 800 */ 
+	margin: 0 auto;
 }
-
-
 /* ---- nav ---- */
 
 nav ul {
-	width: 800px;
+	width: 100%;
 }
-
 nav ul li {
 	float: left;
-	width: 133px;
+	width: 16%; /* 133 / 800 */ 
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 5px;
+	margin-bottom: 5px; /* 5 / 800 */ 
 }
-
 nav ul li a {
 	display: block;
 	color: red;
 }
-
 /* ---------- End Header ---------- */ 
 /* ---------- Section ---------- */
 section {
 	overflow: hidden;
-	width: 800px;
+	width: 100%;
 }
 .half_width {
-	width: 380px;
+	width: 380px; /* 380 / 800 */
 	height: 200px;
-	margin: 15px 6px;
+	margin: 15px 6px; /* 6 / 800 */ 
 }
 
 #form_home {
@@ -138,25 +138,25 @@ section {
 }
 
 #email {
-	width: 200px;
+	width: 25%; /* 200 / 800 */ 
 	height: 30px;
 	float: left;
-	margin-right: 10px;
+	margin-right: 1.2%; /* 10 / 800 */ 
 }
 .button_2 {
 	display: block;
 	height: 35px;
-	width: 100px;
+	width: 25%; /* 100 / 800 */ 
 	background-color: #800d0d;
 	color: white;
 }
 .reservations_text {
-	width: 280px;
+	width: 35%; /* 280 / 800 */ 
 	font-size: .8em;
-	margin: 15px 20px;
+	margin: 15px 20px; 
 }
 section h3 {
-	margin: 15px;
+	margin: 1.8%; /* 15 / 800 */ 
 }
 
 
@@ -164,6 +164,10 @@ section h3 {
 
 #menu h2, #menu h3, #menu h4 {
 	text-align: center;
+}
+
+#menu h2 {
+	margin-top: 10px;
 }
 
 #menu h3 {
@@ -189,7 +193,7 @@ section h3 {
 }
 
 #menu {
-	width: 800px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -203,107 +207,302 @@ section h3 {
 
 /* ----- Reservations Form ----- */ 
 #reservations {
-	width: 450px;
+	width: 56.25%; /* 450 / 800 */
 }
 #reservation_form {
-	margin: 40px;
-	width: 400px;
+	margin: 8.8%; /* 40 / 450 */ 
+	width: 88.8888889%; /* 400 / 450*/ 
 }
 section label {
-	width: 150px;
+	width: 33.3333333%; /* 150 / 450 */ 
 	text-align: right;
-	margin-right: 30px;
+	margin-right: 6.6666667%; /* 30 / 450 */ 
 	color: #800d0d;
 }
 section input {
-	width: 150px;
-	margin: 5px;
+	width: 33.3333333%; /* 150 / 450 */ 
+	margin: 1.1111111%; /* 5 / 450 */ 
 }
 #reservation_time {
 	margin: 0  30px 0 35px;
 }
 #telephone, #data { /* had an issue here that I could not figure 
 	out so i had to make two id's to make this work */
-	width: 150px;
+	width: 33.3333333%; /* 150 / 450 */ 
 	text-align: right;
 	margin-right: 30px;
 	float: left;
 }
 #radio {
-	width: 200px;
+	width: 44.4444444%; /* 200/450 */ 
 	float: left;
 }
 #radio input {
-	width: 80px;
+	width: 17.7777778%; /* 80 / 450 */ 
 	float: left;
 	text-align: left;
+	margin-top: 10px;
 }
 #radio label {
-	width: 80px;
+	width: 17.7777778%; /* 80 / 450 */ 
 	float: left;
-	padding-top: 5px;
+	padding-top: 10px;
 }
 .button_3 {
 	display: block;
 	height: 35px;
-	width: 100px;
+	width: 22.2222222%; /* 100/ 450 */ 
 	background-color: #800d0d;
 	color: white;
 	float: left;
-	margin-left: 180px;
+	margin-top: 20px;
+	margin-left: 40%; /* 180 / 450 */ 
+}
+
+.title {
+	float: left;
 }
 /* ---------- About Page ---------- */
 #about {
-	width: 800px;
+	width: 100%;
+	overflow: hidden;
 }
 .left_about {
-	width: 350px;
+	width: 43.75%; /* 350 / 800 */
 }
 .right_about {
-	width: 350px;
+	width: 43.75%; /* 350 / 800 */ 
 }
 .right_about, .left_about {
-	margin: 10px;
-	padding: 10px;
+	margin: 1.25%; /* 10 / 800 */ 
+	padding: 1.25%;
 }
 #about ul li {
-	margin: 10px;
+	margin: 1.25%;
 	text-align: center;
 }
 #about p {
 	margin-bottom: 15px;
 }
-/* ---------- maps page ---------- */
 
-#map {
-	text-align: center;
+/* ---------- contacts ---------- */
+.left_side {
+	width: 37.5%; /* 300 / 800 */ 
 }
+
+#contact_form label {
+	width: 18.75%; /* 150/800 */
+	text-align: right;
+	margin-left: 6.25%; /* 50/ 800 */ 
+}
+
+#contact_form {
+	width: 50%; /* 400 / 800 */ 
+	margin-left: 6.25%; /* 50/800 */ 
+}
+
+#contact_form textarea {
+	margin-right: 15%; /* 120/800 */  
+}
+
+#contact_form h4 {
+	margin: 3.125% 0 1.25%; /* 25 / 800 */ /* 10/800*/
+}
+#contact_form textarea {
+	margin-right: 125px;
+}
+/* ---------- maps page ---------- */
+iframe {
+	width: 100%;
+}
+
 #map_border {
 	margin: 0 auto;
-	width: 426px;
+	width: 53.25%; /* 426/800 */ 
 	border: 3px solid #800d0d;
 }
+
 /* ---------- End Section --------- */
 /* ---------- footer --------- */
 footer {
-	width: 800px;
-	margin-top: 80px;
+	width: 100%;
+	margin-top: 10%; /* 80/800 */ 
 	overflow: hidden;
 }
 .small_width {
-	width: 100px;
-	margin-left: 5px;
+	width: 12.5%; /* 100 / 800 */ 
+	margin-left: .625%; /* 5 / 800 */ 
 }
 
 .big_width {
-	width: 210px;
+	width: 26.2%; /* 210 / 800 */ 
 }
 /* ---------- End Footer ----------*/
+/* ---------- Pseudo classes ---------- */ 
 
 
+/* LOVE HA */
+
+a:visited {
+	color: #9d429a;
+}
+
+a:hover {
+	color: #d54848;
+}
+
+a:active {
+	color: #259bff;
+}
+
+input:focus {
+	background-color: #25bfff;
+	color: #800d0d;
+}
+
+input:hover {
+	background-color: #f6dcdc;
+}
+
+textarea:hover {
+	background-color: #f6dcdc;
+}
+
+.button_3:hover{
+	background-color: #fff;
+	color: #800d0d;
+}
+
+.button_3:active {
+	background-color: #f6dcdc;
+	color: #800d0d;
+}
+
+textarea:focus {
+	background-color: #25bfff;
+	color: #800d0d;
+}
+
+/* ---------- Media Queries ---------- */ 
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 812px) and (min-width: 700px){
+	/* ----- index.html ----- */ 
+	#border {
+		border: none;
+	}
+	.main_subject div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		float: none;
+		height: 100px;
+	}
+	img {
+		padding: 1.5%;
+	}
+	.main_subject h2{
+		text-align: center;
+		overflow: hidden;
+	}
+	.main_subject p {
+		text-align: center;
+	}
+	.main_subject form {
+		margin-left: 200px;
+	}
+	/* ----- Menu ----- */ 
+	#menu {
+		width: 100%;
+
+	}
+
+	/* ----- Reservations ----- */ 
+	#reservations form 	 {
+		width: 100%;
+		margin-left: 100px;
+	}
+
+	#button_3 {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#reservations label {
+		width: 150px;
+		height: 20px;
+	}
+	#reservations input {
+		width: 200px;
+		height: 20px;
+	}
+	#radio {
+		width: auto;
+		height: auto;
+	}
+	#reservation_time {
+		margin-left: 35px;
+		padding-left: 0;
+	}
+
+	/* ----- about ----- */ 
+
+	#about {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.left_about, .right_about {
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+		width: 80%;
+	}
+
+	#about h3 {
+		text-align: center;
+	}
+	#about p {
+		text-align: center;
+	}
+	/* ----- contact ----- */
+	section .contact_page {
+		width: 100%;
+		float: none;
+	}
+
+	/* ----- footer ----- */ 
+	footer {
+		background-color: #800d0d;
+	}
+	footer address {
+		margin-left: 40%;
+		margin-top: 2%;
+	}
+
+	footer img {
+		width: 50px; /* 50 /800 */ 
+		height: 50px;
+
+	}
+	footer .small_width {
+		margin: 1% 0 0 10%;
+	}
+
+	footer .icons {
+		margin: 1% 0 0 10%;
+	}
+	footer .big_width {
+		width: 100%;
+		display: inline;
+		margin-top: 10px;
+		text-align: center;
+	}
+	footer h4, footer address, footer p {
+		color: #fff;
+	}
 
 
-
+}
 
 
 
