@@ -11,6 +11,52 @@
 
 /* ---------- Resets and constants ----------*/
 
+/* ----- Notes ----- */ 
+/*  
+
+1. change he icons responsive sizes to fixed sizes. 
+it is breaking for some reason. 
+
+2. lite.launchlist.net
+put your name, oscars anme etc...
+
+3. look into favicons. google it 
+
+4. check all of the submit buttons for the proper value 
+
+
+                               _
+                            ==(W{==========-      /===-
+                              ||  (.--.)         /===-_---~~~~~~~~~------____
+                              | \_,|**|,__      |===-~___                _,-' `
+                 -==\\        `\ ' `--'   ),    `//~\\   ~~~~`---.___.-~~
+             ______-==|        /`\ html /\ \    | |  \\           _-~`
+       __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\        ,'
+    _-~       /'    |  \\     )__/==0==-\<>/   / /      \      /
+  .'        /       |   \\      /~\___/~~\/  /' /        \   /'
+ /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'
+/-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`
+                  \_|      /        _) | ;  ),   __--~~
+                    '~~--_/      _-~/- |/ \   '-~ \             
+                   {\__--_/}    / \\_>-|)<__\      \
+                   /'   (_/  _-~  | |__>--<__|      | 
+                  |   _/) )-~     | |__>--<__|   C  |   
+                  / /~ ,_/       / /__>---<__/  S   |  
+                 o-o _//        /-~_>---<__-~  S   / 
+                 (^(~          /~_>---<__-      _-~              
+                ,/|           /__>--<__/     _-~                 
+             ,//('(          |__>--<__|     /                  .----_ 
+            ( ( '))          |__>--<__|    |                 /' _---_~\
+         `-)) C) (           |__>--<__|    |               /'  /     ~\`\
+        ,/,'//S (             \__>--<__\    \            /'  //        ||
+      ,C (  S, ))              ~-__>--<_~-_  ~--____---~' _/'/        /'
+    `~S  )`S) ,/|                 ~-_~>--<_/-__       __-~ _/ 
+  ._-~//( )/ )) `                    ~~-'_/_/ /~~~~~~~__--~ 
+   ;'( ')/ ,)(                              ~~~~~~~~~~ 
+  ' ') '( (/
+    '   '  ` 
+    CSS DRAGON!!           
+*/
 
 
 html, body, div, span, applet, object, iframe,
@@ -84,11 +130,16 @@ h4 {
 }
 
 img {
-	width: 100%;
+	width: 95%;
+}
+.icons {
+	width: 50px;
+	height: 50px;
 }
 /* ---------- Main body ------------ */ 
 html {
-	background-color: #fff;
+	background-image: url("../images/furley_bg.png");
+	background-repeat: repeat-both;
 }
 body {
 	max-width: 800px;
@@ -127,10 +178,12 @@ section {
 	overflow: hidden;
 	width: 100%;
 }
+#move {
+	margin-top: 20px;
+}
 .half_width {
-	width: 380px; /* 380 / 800 */
-	height: 200px;
-	margin: 15px 6px; /* 6 / 800 */ 
+	width: 47.5%; /* 380 / 800 */
+	margin: 1.875% .75%; /* 6 / 800 */ 
 }
 
 #form_home {
@@ -138,7 +191,7 @@ section {
 }
 
 #email {
-	width: 25%; /* 200 / 800 */ 
+	width: 200px; /* 200 / 800 */ 
 	height: 30px;
 	float: left;
 	margin-right: 1.2%; /* 10 / 800 */ 
@@ -251,7 +304,7 @@ section input {
 .button_3 {
 	display: block;
 	height: 35px;
-	width: 22.2222222%; /* 100/ 450 */ 
+	width: 100px; /* 100/ 450 */ 
 	background-color: #800d0d;
 	color: white;
 	float: left;
@@ -285,7 +338,7 @@ section input {
 	margin-bottom: 15px;
 }
 
-/* ---------- contacts ---------- */
+/* ---------- contact ---------- */
 .left_side {
 	width: 37.5%; /* 300 / 800 */ 
 }
@@ -298,7 +351,7 @@ section input {
 
 #contact_form {
 	width: 50%; /* 400 / 800 */ 
-	margin-left: 6.25%; /* 50/800 */ 
+	margin: 6.25% 6.25% 0 0; /* 50/800 */ 
 }
 
 #contact_form textarea {
@@ -386,7 +439,8 @@ textarea:focus {
 /* ---------- Media Queries ---------- */ 
 
 /* Desktops and laptops ----------- */
-@media only screen and (max-width: 812px) and (min-width: 700px){
+
+@media only screen and (max-width: 812px) and (min-width: 650px){
 	/* ----- index.html ----- */ 
 	#border {
 		border: none;
@@ -396,10 +450,10 @@ textarea:focus {
 		margin: 0;
 		padding: 0;
 		float: none;
-		height: 100px;
+		/*height: 100px;*/
 	}
 	img {
-		padding: 1.5%;
+		margin: 0 10px 0 10px;
 	}
 	.main_subject h2{
 		text-align: center;
@@ -414,7 +468,8 @@ textarea:focus {
 	/* ----- Menu ----- */ 
 	#menu {
 		width: 100%;
-
+		text-align: center;
+		/*background-color: blue;*/
 	}
 
 	/* ----- Reservations ----- */ 
@@ -426,6 +481,12 @@ textarea:focus {
 	#button_3 {
 		margin-top: 0;
 		padding-top: 0;
+	}
+
+	#reservations h3 {
+		margin:0;
+		padding: 0;
+		text-align: center;
 	}
 
 	#reservations label {
@@ -465,10 +526,24 @@ textarea:focus {
 		text-align: center;
 	}
 	/* ----- contact ----- */
-	section .contact_page {
+	.contact {
 		width: 100%;
+		overflow: hidden;
+	}
+	section .contact_page {
+		margin: 0 auto;
+		width: 80%;
 		float: none;
 	}
+	section .contact_page h3, section .contact_page h2, section .contact_page address, section .contact-page p {
+		text-align: center;
+	}
+	#contact_form {
+		margin: 20px auto;
+		float: none;
+		overflow: hidden;
+	}
+	/* ----- directions ----- */
 
 	/* ----- footer ----- */ 
 	footer {
@@ -500,12 +575,59 @@ textarea:focus {
 	footer h4, footer address, footer p {
 		color: #fff;
 	}
-
-
 }
-
-
-
+@media only screen and (max-width: 649px) and (min-width: 320px){
+	#logo {
+		width: 100%;
+		height: 100px;
+	}
+	#logo img {
+		width: 220px;
+	}
+	nav {
+	}
+	nav ul li {
+		float: none;
+		width: 100%;
+		height: 90px;
+		line-height: 90px;
+		background-color: black;
+		margin: 1px;
+		padding: 0;
+	}
+	nav ul li a {
+		float: none;
+		text-align: center;
+	}
+	.body_image {
+		display: none;
+	}
+	.float-let {
+		float: none;
+	}
+	.float-right {
+		float: none;
+	}
+	.half_width {
+		width: 95%;
+		text-align: center;
+	}
+	#border {
+		border: none;
+	}
+	#form_home {
+		margin: 10px auto;
+		width: 210px;
+		overflow: hidden;
+	}
+	#form_home input, .button_2 {
+		width: 200px;
+		margin: 0 auto;
+	}
+	footer {
+		display: none;
+	}
+}
 
 
 
