@@ -585,6 +585,8 @@ textarea:focus {
 		width: 220px;
 	}
 	nav {
+		width: 70%;
+		margin: 0 auto;
 	}
 	nav ul li {
 		float: none;
@@ -596,8 +598,10 @@ textarea:focus {
 		padding: 0;
 	}
 	nav ul li a {
+		font: bold small-caps normal 20px/90px "IM+Fell+English", Helvetica, sans-serif;
 		float: none;
 		text-align: center;
+		font: ;
 	}
 	.body_image {
 		display: none;
@@ -624,6 +628,7 @@ textarea:focus {
 		width: 200px;
 		margin: 0 auto;
 	}
+
 	footer {
 		display: none;
 	}
