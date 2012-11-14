@@ -14,8 +14,6 @@
 /* ----- Notes ----- */ 
 /*  
 
-1. change he icons responsive sizes to fixed sizes. 
-it is breaking for some reason. 
 
 2. lite.launchlist.net
 put your name, oscars anme etc...
@@ -50,9 +48,9 @@ put your name, oscars anme etc...
          `-)) C) (           |__>--<__|    |               /'  /     ~\`\
         ,/,'//S (             \__>--<__\    \            /'  //        ||
       ,C (  S, ))              ~-__>--<_~-_  ~--____---~' _/'/        /'
-    `~S  )`S) ,/|                 ~-_~>--<_/-__       __-~ _/ 
-  ._-~//( )/ )) `                    ~~-'_/_/ /~~~~~~~__--~ 
-   ;'( ')/ ,)(                              ~~~~~~~~~~ 
+    `~S  )`S) ,C|                 ~-_~>--<_/-__       __-~ _/ 
+  ._-S//( )/ )S `                    ~~-'_/_/ /~~~~~~~__--~ 
+   ;'( ')/ ,)(S                             ~~~~~~~~~~ 
   ' ') '( (/
     '   '  ` 
     CSS DRAGON!!           
@@ -129,14 +127,15 @@ h4 {
 	border-right: 5px solid #800d0d;
 }
 
-img {
-	width: 95%;
+section img {
+	width: 95%; /* 95% */
 }
 .icons {
 	width: 50px;
 	height: 50px;
 }
-/* ---------- Main body ------------ */ 
+/* Main body */
+/* =================================== */ 
 html {
 	background-image: url("../images/furley_bg.png");
 }
@@ -144,25 +143,27 @@ body {
 	max-width: 800px;
 	margin: 0 auto;
 }
-/* ---------- Header ----------*/
+/* Header */
+/* =================================== */ 
 header {
 	width: 100%;
 	margin-top: 10px;
 }
-
 #logo {
 	text-align: center;
 	width: 50%; /* 400 / 800 */ 
 	margin: 0 auto;
 }
-/* ---- nav ---- */
-
+/* nav */
+/* =================================== */ 
 nav ul {
 	width: 100%;
 }
 nav ul li {
 	float: left;
-	width: 16%; /* 133 / 800 */ 
+	width: 16.625%; /* 133 / 800 */ 
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 5px; /* 5 / 800 */ 
@@ -171,8 +172,9 @@ nav ul li a {
 	display: block;
 	color: red;
 }
-/* ---------- End Header ---------- */ 
-/* ---------- Section ---------- */
+
+/* Section  */
+/* =================================== */ 
 section {
 	overflow: hidden;
 	width: 100%;
@@ -184,11 +186,9 @@ section {
 	width: 47.5%; /* 380 / 800 */
 	margin: 1.875% .75%; /* 6 / 800 */ 
 }
-
 #form_home {
 	margin-top: 80px;
 }
-
 #email {
 	width: 200px; /* 200 / 800 */ 
 	height: 30px;
@@ -210,24 +210,19 @@ section {
 section h3 {
 	margin: 1.8%; /* 15 / 800 */ 
 }
-
-
-/* ----- Menu Page ---------- */
-
+/* Menu Page */
+/* =================================== */ 
 #menu h2, #menu h3, #menu h4 {
 	text-align: center;
 }
-
 #menu h2 {
 	margin-top: 10px;
 }
-
 #menu h3 {
 	line-height: 30px;
 	font-size: 30px;
 	margin-bottom: 10px;
 }
-
 #menu h5 {
 	line-height: 20px;
 	font-size: 15px;
@@ -235,7 +230,6 @@ section h3 {
 	margin-bottom: 10px;
 	margin-top: 0;
 }
-
 #menu h4 {
 	line-height: 20px;
 	margin: 20px 0 20px;
@@ -243,21 +237,18 @@ section h3 {
 	color: #800d0d;
 	text-decoration: underline;
 }
-
 #menu {
 	width: 100%;
 	text-align: center;
 }
-
 #menu li {
 	margin: 10px 0 10px;
 }
-
 #menu li span {
 	font-style: italic;
 }
-
-/* ----- Reservations Form ----- */ 
+/* Reservations Form  */ 
+/* =================================== */ 
 #reservations {
 	width: 56.25%; /* 450 / 800 */
 }
@@ -278,8 +269,7 @@ section input {
 #reservation_time {
 	margin: 0  30px 0 35px;
 }
-#telephone, #data { /* had an issue here that I could not figure 
-	out so i had to make two id's to make this work */
+#telephone, #data { 
 	width: 150px; /* 150 / 450 */ 
 	text-align: right;
 	margin-right: 30px;
@@ -308,13 +298,13 @@ section input {
 	color: white;
 	float: left;
 	margin-top: 20px;
-	margin-left: 180px; /* 180 / 450 */ 
+	margin-left: 40%; /* 180 / 450 */ 
 }
-
 .title {
 	float: left;
 }
-/* ---------- About Page ---------- */
+/* About Page */
+/* =================================== */ 
 #about {
 	width: 100%;
 	overflow: hidden;
@@ -336,46 +326,41 @@ section input {
 #about p {
 	margin-bottom: 15px;
 }
-
-/* ---------- contact ---------- */
+/* contact */
+/* =================================== */ 
 .left_side {
 	width: 37.5%; /* 300 / 800 */ 
 }
-
 #contact_form label {
 	width: 18.75%; /* 150/800 */
 	text-align: right;
 	margin-left: 6.25%; /* 50/ 800 */ 
 }
-
 #contact_form {
 	width: 50%; /* 400 / 800 */ 
 	margin: 6.25% 6.25% 0 0; /* 50/800 */ 
 }
-
 #contact_form textarea {
 	margin-right: 15%; /* 120/800 */  
 }
-
 #contact_form h4 {
 	margin: 3.125% 0 1.25%; /* 25 / 800 */ /* 10/800*/
 }
 #contact_form textarea {
 	margin-right: 125px;
 }
-/* ---------- maps page ---------- */
+/* maps page  */
+/* =================================== */ 
 iframe {
 	width: 100%;
 }
-
 #map_border {
 	margin: 0 auto;
 	width: 53.25%; /* 426/800 */ 
 	border: 3px solid #800d0d;
 }
-
-/* ---------- End Section --------- */
-/* ---------- footer --------- */
+/* footer */
+/* =================================== */ 
 footer {
 	width: 100%;
 	margin-top: 10%; /* 80/800 */ 
@@ -385,62 +370,64 @@ footer {
 	width: 12.5%; /* 100 / 800 */ 
 	margin-left: .625%; /* 5 / 800 */ 
 }
-
 .big_width {
 	width: 26.2%; /* 210 / 800 */ 
 }
-/* ---------- End Footer ----------*/
-/* ---------- Pseudo classes ---------- */ 
-
-
-/* LOVE HA */
-
+/* Pseudo classes  */ 
+/* =================================== */ 
+/* LOVE HA ?!*/
 a:visited {
 	color: #9d429a;
 }
-
 a:hover {
 	color: #d54848;
+	background-color: rgba( 111, 111, 111, .1)
 }
-
 a:active {
 	color: #259bff;
 }
-
 input:focus {
-	background-color: #25bfff;
+	background-color: #E8E3E5;
 	color: #800d0d;
 }
-
 input:hover {
 	background-color: #f6dcdc;
 }
-
 textarea:hover {
 	background-color: #f6dcdc;
 }
-
 .button_3:hover{
 	background-color: #fff;
 	color: #800d0d;
 }
-
 .button_3:active {
 	background-color: #f6dcdc;
 	color: #800d0d;
 }
-
 textarea:focus {
 	background-color: #25bfff;
 	color: #800d0d;
 }
+/* Media Queries */ 
+/* =================================== */ 
+@media only screen and (min-width: 801px){
+	body {
+		width: 800px;
+		border: 1px solid #800d0d;
+		box-shadow: 10px 10px 5px #888;
+	}
+	section img {
+	width: 800px; 
+}
+	#index img {
+		width: 800px;
+		margin: 0 auto;
+	}
 
-/* ---------- Media Queries ---------- */ 
-
-/* Desktops and laptops ----------- */
-
-@media only screen and (max-width: 812px) and (min-width: 650px){
-	/* ----- index.html ----- */ 
+}
+@media only screen and (max-width: 800px) and (min-width: 650px){
+	/* index.html */ 
+	/* =================================== */ 
 	#border {
 		border: none;
 	}
@@ -470,24 +457,21 @@ textarea:focus {
 		text-align: center;
 		/*background-color: blue;*/
 	}
-
-	/* ----- Reservations ----- */ 
+	/* Reservations */ 
+	/* =================================== */ 
 	#reservations form 	 {
 		width: 400px;
 		margin-left: 100px;
 	}
-
 	#button_3 {
 		margin-top: 0;
 		padding-top: 0;
 	}
-
 	#reservations h3 {
 		margin:0;
 		padding: 0;
 		text-align: center;
 	}
-
 	#reservations label {
 		width: 150px;
 		height: 20px;
@@ -504,9 +488,8 @@ textarea:focus {
 		margin-left: 35px;
 		padding-left: 0;
 	}
-
-	/* ----- about ----- */ 
-
+	/* about  */ 
+	/* =================================== */ 
 	#about {
 		margin: 0 auto;
 		width: 100%;
@@ -517,14 +500,14 @@ textarea:focus {
 		float: none;
 		width: 80%;
 	}
-
 	#about h3 {
 		text-align: center;
 	}
 	#about p {
 		text-align: center;
 	}
-	/* ----- contact ----- */
+	/* contact */
+	/* =================================== */ 
 	.contact {
 		width: 100%;
 		overflow: hidden;
@@ -542,9 +525,8 @@ textarea:focus {
 		float: none;
 		overflow: hidden;
 	}
-	/* ----- directions ----- */
-
-	/* ----- footer ----- */ 
+	/* footer */ 
+	/* =================================== */ 
 	footer {
 		background-color: #800d0d;
 	}
@@ -552,16 +534,13 @@ textarea:focus {
 		margin-left: 40%;
 		margin-top: 2%;
 	}
-
 	footer img {
 		width: 50px; /* 50 /800 */ 
 		height: 50px;
-
 	}
 	footer .small_width {
 		margin: 1% 0 0 10%;
 	}
-
 	footer .icons {
 		margin: 1% 0 0 10%;
 	}
@@ -592,7 +571,6 @@ textarea:focus {
 		width: 100%;
 		height: 90px;
 		line-height: 90px;
-		background-color: black;
 		margin: 1px;
 		padding: 0;
 	}
@@ -617,7 +595,8 @@ textarea:focus {
 	#border {
 		border: none;
 	}
-	/* ------ Index ------ */
+	/* Index */
+	/* =================================== */ 
 	#form_home {
 		margin: 10px auto;
 		width: 210px;
@@ -627,7 +606,11 @@ textarea:focus {
 		width: 200px;
 		margin: 0 auto;
 	}
-	/* ------ Menu ------ */ 
+	#index {
+		display: none;
+	}
+	/* Menu  */ 
+	/* =================================== */ 
 	.navigation {
 		display: none;
 	}
@@ -641,7 +624,8 @@ textarea:focus {
 		float: none;
 		text-align: center;
 	}
-	/*------ Reservations ------ */
+	/* Reservations */
+	/* =================================== */ 
 	.reservations_text {
 		display: none;
 	}
@@ -652,18 +636,18 @@ textarea:focus {
 	#reservations h3 {
 		text-align: center;
 	}
-	/* ------ about ------ */
-
-	/* ------ contact ------ */
+	/* contact */
+	/* =================================== */ 
 	.left_side {
-		width: 100%;
+		width: 80%;
 		text-align: center;
-		margin-top: 50px;
-	}
-	#contact_form {
 		margin: 0 auto;
-		margin: 50px 0 0 150px;
-		text-align: center;
+		float: none;
+	}
+	#contact_form {		
+		margin: 50px auto;
+		float: none;
+		width: 200px;
 	}
 	#text-area label {
 		text-align: left;
@@ -671,19 +655,21 @@ textarea:focus {
 	#text-area textarea {
 		margin: 0 auto;
 	}
-	/* ------ Directions ------ */ 
+	/* Directions */ 
+	/* =================================== */ 
 	#map h3 {
 		text-align: center;
 		margin-top: 50px;
 	}
 	#map div {
 		margin-top: 50px;
+		width: 80%;
 	}
-
 	footer {
 		display: none;
 	}
 }
+/* The Dragon has spoken */
 
 
 
